@@ -1,0 +1,27 @@
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import './Card.css'
+
+const Card = (props) => {
+    let style = {};
+    if(props.showing) {
+        style.backgroundColor = props.front;
+    } else if(!props.showing) {
+        style.backgroundColor = props.back;
+    } else {
+        console.log(props.showing);
+    }
+    return (
+        <div onClick={props.onClick}
+        className="card" style={style}>
+        </div>
+    );
+
+    Card.propTypes = {
+        showing: PropTypes.bool.isRequired,
+        backgroundColor: PropTypes.string.isRequired,
+        onClick: PropTypes.func.isRequired
+    }
+}
+
+export default Card;

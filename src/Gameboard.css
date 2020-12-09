@@ -1,0 +1,13 @@
+.Gameboard {
+    margin: 20px 2%;
+    width: 96%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gameboard .row {
+    display: flex;
+    flex-direction: row;
+}

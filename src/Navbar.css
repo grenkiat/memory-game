@@ -1,0 +1,24 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.link p {
+    padding: 0 10px;
+}
+
+.title {
+    margin: 10px 10px;
+    color: white;
+}
